@@ -5,8 +5,7 @@
 $( ".row" ).wrapAll("<div class='time-id' />");
 
 var currentDate = dayjs().format ("dddd-MM-DD-YYYY");
-
-document.getElementById("currentDay").innerHTML = currentDate;
+$("#currentDay").html(currentDate);
 
 var saveButtonEl = $('#saveBtn');
 
