@@ -7,12 +7,14 @@ $( ".row" ).wrapAll("<div class='time-id' />");
 var currentDate = dayjs().format ("dddd-MM-DD-YYYY");
 $("#currentDay").html(currentDate);
 
-var saveButtonEl = $('#saveBtn');
-
-$(function () {
     // TODO: Add a listener for click events on the save button. This code should
     // use the id in the containing time-block as a key to save the user input in
     // local storage. 
+
+    $(document).ready(function () {
+        $(".saveBtn").on("click", function () {}
+
+    }
     
 
     //HINT: What does `this` reference in the click listener
