@@ -4,7 +4,7 @@
 
 $( ".row" ).wrapAll("<div class='time-id' />");
 
-var currentDate = dayjs().format ("DDDD-MM-YYYY");
+var currentDate = dayjs().format ("dddd-MM-DD-YYYY");
 
 document.getElementById("currentDay").innerHTML = currentDate;
 
