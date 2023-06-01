@@ -4,6 +4,10 @@
 
 $( ".row" ).wrapAll("<div class='time-id' />");
 
+var currentDate = dayjs().format ("DDDD-MM-YYYY");
+
+document.getElementById("currentDay").innerHTML = currentDate;
+
 var saveButtonEl = $('#saveBtn');
 
 $(function () {
@@ -11,7 +15,6 @@ $(function () {
     // use the id in the containing time-block as a key to save the user input in
     // local storage. 
     
-
 
     //HINT: What does `this` reference in the click listener
     // function? How can DOM traversal be used to get the "hour-x" id of the
