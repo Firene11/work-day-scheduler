@@ -31,26 +31,20 @@ $(document).ready(function () {
     // current hour in 24-hour time?
 
     function timeSections () {
-        var currentTime = new Date().getHours();
+        var currentTime = dayjs().Hour();
 
-        var workHours = document.querySelectorAll(".time-block");
-        
+        $(".time-block").each(function () {
+            var workHour = parseInt($(this).attr("id"));
 
-        workHours.forEach(block => {
-            var hourBlock = parseInt(block.id);
-            if (hourBlock < currentTime) {
-                block.classList.add("past");
-                block.classList.remove("present");
-                block.classList.remove("future");
-
-            } else if (hourBlock === currentTime) {
-                block.classList.add("present");
-                block.classList.remove("past");
-                block.classList.remove("future");
-            } else {
-                block.classList.add("future");
-                block.classList.remove("past");
-                block.classList.remove("present");
+            // To check the time and add the classes for background indicators
+            if (workHour < currentTime) {
+                $(this).addClass("past");
+            }
+            else if (workHour === currentTime) {
+                $(this).addClass("present");
+            }
+            else {
+                $(this).addClass("future");
             }
         })
     }
