@@ -32,17 +32,17 @@ body {
   
   .past {
     background-color: #d3d3d3;
-    color: gray;
+    color: white;
   }
   
   .present {
     background-color: #ff6961;
-    color: rgb(223, 49, 78);
+    color: white;
   }
   
   .future {
     background-color: #77dd77;
-    color: green;
+    color: white;
   }
   
   .saveBtn {
