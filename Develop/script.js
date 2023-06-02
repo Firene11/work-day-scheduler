@@ -12,10 +12,10 @@ $("#currentDay").html(currentDate);
 var saveButtonEl = $('#saveBtn');
 
 $(document).ready(function () {
-    // TODO: Add a listener for click events on the save button. This code should
-    // use the id in the containing time-block as a key to save the user input in
-    // local storage. 
-    
+
+//Added a listener for click events on the save button. This code uses the id in the containing time-block 
+//as a key to save the user input in local storage.   
+
     $(".saveBtn").on("click", function () {
         var textArea = $(this).siblings(".description").val();
         var timeBlock = $(this).parent().attr("id");
