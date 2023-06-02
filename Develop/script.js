@@ -33,7 +33,18 @@ $(document).ready(function () {
     function timeSections () {
         var currentTime = dayjs().hour();
 
-        
+        var workHours = document.querySelectorAll(".time-block");
+
+        workHours.forEach(block => {
+            var hourBlock = parseInt(block.id);
+            if (hourBlock < currentTime) {
+                block.classList.add("past");
+            } else if (hourBlock === currentTime) {
+                block.classList.add("present");
+            } else {
+                block.classList.add("future");
+            }
+        })
     }
 
     // TODO: Add code to get any user input that was saved in localStorage and set
