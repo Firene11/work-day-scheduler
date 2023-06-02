@@ -31,7 +31,7 @@ $(document).ready(function () {
     // current hour in 24-hour time?
 
     function timeSections () {
-        var currentTime = dayjs().hour();
+        var currentTime = new Date().getHours();
 
         var workHours = document.querySelectorAll(".time-block");
 
@@ -47,8 +47,10 @@ $(document).ready(function () {
         })
     }
 
+
     // TODO: Add code to get any user input that was saved in localStorage and set
     // the values of the corresponding textarea elements. HINT: How can the id
     // attribute of each time-block be used to do this?
-  });
+    timeSections();
+  })
   
