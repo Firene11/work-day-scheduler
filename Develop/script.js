@@ -34,23 +34,29 @@ $(document).ready(function () {
         var currentTime = new Date().getHours();
 
         var workHours = document.querySelectorAll(".time-block");
+        
 
         workHours.forEach(block => {
             var hourBlock = parseInt(block.id);
             if (hourBlock < currentTime) {
                 block.classList.add("past");
+                block.classList.remove("present");
+                block.classList.remove("future");
+
             } else if (hourBlock === currentTime) {
                 block.classList.add("present");
+                block.classList.remove("past");
+                block.classList.remove("future");
             } else {
                 block.classList.add("future");
+                block.classList.remove("past");
+                block.classList.remove("present");
             }
         })
     }
 
-
     // TODO: Add code to get any user input that was saved in localStorage and set
     // the values of the corresponding textarea elements. HINT: How can the id
     // attribute of each time-block be used to do this?
-    timeSections();
-  })
+  });
   
