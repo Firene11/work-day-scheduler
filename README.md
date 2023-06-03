@@ -12,7 +12,7 @@ You can click into a timeblock and enter an event and click the save button for 
 LINK
 
 ## Screenshot
-![Screenshot](assets/screenshot.jpg)
+![Screenshot](Assets/screenshot.jpg)
 
 ## Credits
 n/a
