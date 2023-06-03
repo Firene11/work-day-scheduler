@@ -12,6 +12,7 @@ You can click into a timeblock and enter an event and click the save button for 
 LINK
 
 ## Screenshot
+https://github.com/Firene11/work-day-scheduler/blob/3be4aacf26e11803c2fbbda9bbb1883e55433d82/Assets/screenshot.jpg
 
 ## Credits
 n/a
