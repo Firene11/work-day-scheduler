@@ -9,7 +9,7 @@ n/a
 ## Usage
 You can click into a timeblock and enter an event and click the save button for that timeblock. Then the text for that event is saved in local storage. When you refresh the page the saved events remain.
 
-LINK
+[LINK](https://firene11.github.io/work-day-scheduler/)
 
 ## Screenshot
 ![Screenshot](Assets/screenshot.jpg)
